@@ -1,17 +1,13 @@
-﻿<%@ Page Title="Contact" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="Darbuka_Prototype.Contact" %>
-
-<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <h2><%: Title %>.</h2>
-    <h3>Your contact page.</h3>
-    <address>
-        One Microsoft Way<br />
-        Redmond, WA 98052-6399<br />
-        <abbr title="Phone">P:</abbr>
-        425.555.0100
-    </address>
-
-    <address>
-        <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-        <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-    </address>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MySite.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="Darbuka_Prototype.Contact1" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="Title" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="Heading2" runat="server">
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="MainContent" runat="server">
+    <p>Name:_____________________________</p>
+    <p>E-mail:___________________________</p>
+    <p>Address:__________________________</p>
+    <p>Message:__________________________</p>
+    <p></p>
+    <a href="~/Default" runat="server">>>SUBMIT<<</a>
 </asp:Content>

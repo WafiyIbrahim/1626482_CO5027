@@ -11,7 +11,7 @@ namespace Darbuka_Prototype
 {
 
 
-    public partial class Contact1
+    public partial class SignIn
     {
     }
 }

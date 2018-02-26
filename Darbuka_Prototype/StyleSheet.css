@@ -1,0 +1,158 @@
+﻿html, body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    font-size: 10px;
+}
+
+
+ol, ul {
+    list-style: none;
+}
+
+/* Global Change */
+
+html {
+}
+
+body {
+    background-color: #130723;
+}
+
+/* Text Elements */
+
+p {
+    color: #fff;
+    font-size: 15px;
+    line-height: 150%;
+    text-align: justify;
+    font-family: Arial;
+}
+
+    p .left {
+        margin: 1.5em 1.5em 1.5em 0;
+        padding: 0;
+    }
+
+    p .right {
+        margin: 1.5em 0 1.5em 1.5em;
+        padding: 0;
+    }
+
+
+/* Lists */
+
+ul {
+}
+
+ol {
+    list-style-type: decimal;
+}
+
+ul li {
+    color: #000;
+    font-size: 12px;
+}
+
+ol li {
+    color: #000;
+    font-size: 12px;
+}
+
+
+/* Containers */
+
+#wrapper {
+    margin: auto;
+}
+
+/* Homepage - Main (Purple in color) Navigation */
+
+#navigation {
+    background-color: #321450;
+    width: 97%;
+    margin-bottom: 0%;
+    text-align: center;
+    padding: 20px;
+}
+
+    #navigation ul {
+        width: 50%;
+        position: relative;
+        display: block;
+        margin: 0 auto;
+    }
+
+        #navigation ul li {
+            display: inline;
+            list-style: none;
+            padding: 0px 20px;
+        }
+
+            #navigation ul li a {
+                font-family: Calibri;
+                font-size: large;
+                font-weight: bold;
+                color: white;
+                text-decoration: none;
+            }
+
+    #navigation a:hover {
+        color: #E4BC06;
+    }
+
+    #navigation ul li a.active {
+        color: #E4BC06;
+    }
+
+
+/* Homepage - Top (Gray in color) Navigation */
+
+#TopBar {
+    background-color: #1B1D1A;
+    width: 100%;
+    height: 1cm;
+}
+
+#TopNavi a {
+    font-family: Calibri;
+    font-size: medium;
+    color: white;
+    font-weight: normal;
+    text-decoration: none;
+    margin: 2% 2% 2% 2%;
+}
+
+#TopNavi ul {
+    list-style: none;
+    width: 50%;
+    float: left;
+    margin-top: -2%;
+    margin-left: 5%;
+}
+
+    #TopNavi ul li {
+        display: inline;
+        list-style: none;
+        margin: 0px 5px 0px 5px;
+    }
+
+        #TopNavi ul li a {
+            font-family: Calibri;
+            font-size: large;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+        }
+
+#TopNavi a:hover {
+    color: #055DA3;
+}
+
+#TopBar a {
+    float: left;
+    width: 40px;
+    height: 40px;
+    margin-left: 3%;
+}

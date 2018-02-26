@@ -1,0 +1,73 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MySite.master.cs" Inherits="Darbuka_Prototype.MySite" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head runat="server">
+
+    <title>
+         <asp:ContentPlaceHolder ID="Title" runat="server"></asp:ContentPlaceHolder>
+    </title>
+
+
+    <link href="~/css/StyleSheet.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body runat="server">
+
+    <div id="page">
+
+<!-- Sign in and Register Navigation-->
+       <div id="TopNavi">
+        <ul>
+			<li><a href="~/SignIn">Sign in</a></li>
+            <li><a href="http://movies.disney.co.uk/">|</a></li>	
+			<li><a href="~/Register">Register</a></li>
+		</ul>
+    </div> 
+
+<!-- Logo and Name of the Instrument -->
+    <div id="NavigationBar">
+        <div id="Logo">
+            <h1>Darbuka</h1>
+        </div>
+
+<!-- Main Navigation Tab -->
+        <div id="navigation">			
+	        <ul>
+			    <li><a href="~/Default" runat="server">HOME</a></li>
+                <li><a href="~/Doumbek" runat="server">DOUMBEK</a></li>
+                <li><a href="~/Accessories"  runat="server">ACCESSORIES</a></li>
+                <li><a href="~/Contact" runat="server">CONTACT US</a></li>
+		    </ul>			
+	    </div>
+    </div>
+
+<!-- Product pictures and prices -->
+    <div id="content">
+        <h2>
+            <asp:ContentPlaceHolder ID="Heading2" runat="server">
+            </asp:ContentPlaceHolder>
+        </h2>
+
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+    </div>
+
+<!-- Footer of the page -->
+    <div id="FooterGrey"></div>
+
+    <div id="FooterWhite">
+        <p>&copy; 2018 Arab Instruments. All Right Reserved.</p>
+    </div>	
+
+
+
+    </div>
+
+
+</body>
+
+</html>
