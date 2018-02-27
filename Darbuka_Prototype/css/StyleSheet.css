@@ -71,12 +71,12 @@ ul li { color: #000;font-size: 12px;}
         display: inline;
     }
 
-    #content img {
-        padding: 10px;
-        margin-left: 20px;
-    }
+    
+    #Detail {width:75%; margin-left:15%;}
 
-    #content a:hover img {
-        border: 3px solid #E9B700;
-    }
+    #Detail p {text-align:justify; width: 75%; font-family:Calibri; margin-left:10%;}
 
+    #contactInfo p {text-align:center;}
+    
+
+    

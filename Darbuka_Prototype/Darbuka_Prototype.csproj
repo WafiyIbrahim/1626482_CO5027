@@ -133,6 +133,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="css\StyleSheet.css" />
+    <Content Include="DarbukDetail.PNG" />
     <Content Include="Default.aspx" />
     <Content Include="DetailDarbuk1.aspx" />
     <Content Include="favicon.ico" />
