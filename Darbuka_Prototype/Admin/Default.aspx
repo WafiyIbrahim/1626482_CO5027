@@ -6,5 +6,5 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="MainContent" runat="server">
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="GoogleMap" runat="server">
-    <h1>ADMIN</h1>
+    <h1>Admin Panel</h1>
 </asp:Content>
