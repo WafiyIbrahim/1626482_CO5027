@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Darbuka_Prototype
+namespace Darbuka_Prototype.Admin
 {
 
 
-    public partial class SignIn
+    public partial class Default
     {
     }
 }
