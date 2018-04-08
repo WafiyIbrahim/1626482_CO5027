@@ -34,6 +34,8 @@
 <body runat="server">
 
     <div id="page">
+        <div id="contentArea">
+    
 
 <!-- Sign in and Register Navigation-->
        <div id="TopNavi">
@@ -42,7 +44,7 @@
             <li><a>|</a></li>	
 			<li><a href="~/Register">Register</a></li>
 		</ul>
-    </div> 
+       </div> 
 
 <!-- Logo and Name of the Instrument -->
     <div id="NavigationBar">
@@ -80,7 +82,7 @@
     </div>	
 
 
-
+    </div>
     </div>
 
     <asp:ContentPlaceHolder ID="GoogleMap" runat="server"></asp:ContentPlaceHolder>
