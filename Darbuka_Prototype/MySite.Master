@@ -40,9 +40,9 @@
 <!-- Sign in and Register Navigation-->
        <div id="TopNavi">
         <ul>
-			<li><a href="~/SignIn" runat="server">Sign in</a></li>
+			<li><a href="~/LogIn.aspx" runat="server">Sign in</a></li>
             <li><a>|</a></li>	
-			<li><a href="~/Register">Register</a></li>
+			<li><a href="~/Register.aspx" runat="server">Register</a></li>
 		</ul>
        </div> 
 

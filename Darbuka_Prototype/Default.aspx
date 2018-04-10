@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MySite.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Darbuka_Prototype.Default" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="Title" runat="server">
-    <title>This my my darbuka</title>
+    <title> This my my darbuka </title>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Heading2" runat="server">
     THE BEST DARBUKA SHOP
