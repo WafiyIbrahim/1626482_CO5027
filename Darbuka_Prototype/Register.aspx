@@ -16,7 +16,7 @@
         <!-- Password Field -->
         <p></p>
             <asp:Label ID="lblRegPassword" runat="server" Text="Password"></asp:Label>
-            <asp:TextBox ID="txtRegPassword" runat="server"></asp:TextBox>
+            <asp:TextBox ID="txtRegPassword" runat="server" TextMode="Password"></asp:TextBox>
 
         <!-- Register Button -->
         <p></p>

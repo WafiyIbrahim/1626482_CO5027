@@ -162,7 +162,7 @@
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="Admin\AddPage.aspx" />
-    <Content Include="Admin\Default.aspx" />
+    <Content Include="Admin\index.aspx" />
     <Content Include="Admin\Edit.aspx" />
     <Content Include="Admin\ListPage.aspx" />
     <Content Include="Admin\UploadImage.aspx" />
@@ -237,12 +237,12 @@
     <Compile Include="Admin\AddPage.aspx.designer.cs">
       <DependentUpon>AddPage.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Admin\Default.aspx.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
+    <Compile Include="Admin\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Admin\Default.aspx.designer.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
+    <Compile Include="Admin\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\Edit.aspx.cs">
       <DependentUpon>Edit.aspx</DependentUpon>
