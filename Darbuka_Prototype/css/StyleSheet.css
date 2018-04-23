@@ -1,84 +1,127 @@
-﻿html, body { margin: 0; padding: 0; border: 0; background: transparent;}
+﻿html, body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: transparent;
+}
 
-ol, ul { list-style: none;}
+/* This is the CSS for MySite.Master */
 
-body {background-color: lavender;}
+#page {
+    width: 100%;
+    margin: auto;
+    background-color: #ffffff;
+    min-height: 500px;
+}
 
-#page { width: 100%; margin: auto; background-color: white; min-height: 500px;}
+#contentArea {
+    width: 850px;
+    margin: 0 auto 0 auto;
+    background-color: #ffffff;
+}
 
-#contentArea {float: left; width: 750px; margin: 20px 0 20px 0; padding: 10px;}
+#TopBar {
+    background-color: #ffffff;
+}
 
-/* Text Elements */
+#Logo img {
+    
+    display: block;
+    margin: 0 auto 0 auto;
+}
 
-p { color: black; line-height: 150%; text-align: justify; font-family: Calibri; font-size: 15px;}
+#SigninAndRegister {
+    background-color: #222222;
+    width: 100%;
+    height: 1cm;
+}
 
-/* Lists */
+#SigninAndRegister ul {
+    list-style: none;
+    width: 30%;
+    float: right;
+    margin-top: 1%;
+    margin-right: 1%;
+}
 
-ul {}
+#SigninAndRegister ul li {
+    display: inline;
+    list-style: none;
+    margin: 0px 5px 0px 5px;
+}
 
-ul li { color: #000;font-size: 12px;}
+#SigninAndRegister ul li a {
+    font-family: Arial;
+    font-size: small;
+    color: white;
+    text-decoration: none;
+    font-weight: normal;
+}
 
-/* Homepage - Top (Gray in color) Navigation */
+#navigation {
+    background-color: #ffffff;
+    width: 100%;
+    text-align: center;
+    float: right;
+    border-top: double;
+    border-bottom: double;
+}
 
-#TopNavi { background-color: #1B1D1A; width: 100%; height: 1cm;}
+#navigation ul {
+    width: 50%;
+    position: relative;
+    display: block;
+    margin: 10px auto 10px auto;
+}
 
-#TopNavi ul { list-style: none; width: 20%; float: right; margin-top: 1%; margin-right:1%;}
+#navigation ul li {
+    display: inline;
+    list-style: none;
+    padding: 0px 10px;
+}
 
-#TopNavi ul li { display: inline; list-style: none; margin: 0px 5px 0px 5px;}
+#navigation ul li a {
+    font-family: Calibri;
+    font-size: large;
+    color: #616161;
+    text-decoration: none;
+    font-weight: bold;
+}
 
-#TopNavi ul li a { font-family: Calibri; font-size: medium; color: white; text-decoration: none;}
+#navigation a:hover {
+    color: black;
+ }
 
-/* Homepage - Navigation Bar */
+#FooterBottom {
+    width: 100%;
+    background-color: #404042;
+    height: 1cm;
+}
 
-#NavigationBar {width:100%; background-color: white;}
+#Copyrights {
+    width: 100%;
+    display: block;
+    margin: 0 auto 0 auto;
+}
 
-/* Homepage - Logo */
-
-#Logo { width: 100%; text-align: center;}
-
-/* Homepage - Navigation Menu */
-
-#navigation { background-color: red; width: 100%; text-align: center; float: right; }
-
-#navigation ul { width: 100%; position: relative; display: block; margin-left:0%;margin-top:1%;}
-
-#navigation ul li { display: inline; list-style: none; padding: 0px 20px; border-left:1px solid #ffffff; border-right:1px solid #ffffff;}
-
-#navigation ul li a { font-family: Calibri; font-size: medium; color: black; text-decoration: none; font-weight:bold;}
-
-#navigation a:hover {text-decoration:underline;}
-
-#navigation ul li a.active {color: red;}
-
-/* Homepage - Content of the page */
-
-#Content {width: 800px; margin-left: 150px;}
-
-/* Homepage - Footer of the page */
-
-#FooterWhite { width: 100%; background-color:white; height: 1cm; }
-
-#FooterWhite p {font-size:10px;text-align:center; margin-top:1%;}
-
-#FooterGrey { width: 100%; background-color: #2a2a2a; height: 2cm;}
-
-/* Default page - Content */
-
-#content h2 {text-align:center; font-family: Calibri;}
-
-#content p {font-weight:bold;}
-/* Photos Page Style */
-
-    #content ul li {
-        display: inline;
+    #Copyrights p {
+        text-align: center;
+        color: #ffffff;
+        font-family: Arial;
+        font-weight: 700;
+        font-size: 12px;
+        margin-top: 10px;
     }
 
-    
-    #Detail {width:75%; margin-left:15%;}
+/* This is the CSS for Default.aspx */
 
-    #Detail p {text-align:justify; width: 75%; font-family:Calibri; margin-left:10%;}
+#HomepageBanner {
+    margin: 20px auto 10px auto;
+    background-color: #ffffff;
+}
 
-    #contactInfo p {text-align:center;}
-    
-
-    
+#HomepageBanner img {
+    width: 850px;
+    display: block;
+    margin: 0 auto 0 auto;
+}

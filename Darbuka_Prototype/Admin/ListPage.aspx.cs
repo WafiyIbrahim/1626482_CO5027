@@ -13,5 +13,10 @@ namespace Darbuka_Prototype.Admin
         {
 
         }
+
+        protected void btnBackToAdmin_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Admin/index.aspx");
+        }
     }
 }

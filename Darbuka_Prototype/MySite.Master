@@ -30,38 +30,37 @@
       }
     </style>
 </head>
-
+<!------------------------------------------ START HERE ------------------------------------------>
 <body runat="server">
 
-    <div id="page">
+<div id="page">
+     <!-- SignIn and Register div -->
+            <div id="SigninAndRegister">
+                <ul>
+			        <li><a href="~/LogIn.aspx" runat="server">Sign In</a></li>
+                    <li><a> or </a></li>	
+			        <li><a href="~/Register.aspx" runat="server">Create an Account</a></li>
+		        </ul>
+            </div>
         <div id="contentArea">
-    
 
-<!-- Sign in and Register Navigation-->
-       <div id="TopNavi">
-        <ul>
-			<li><a href="~/LogIn.aspx" runat="server">Sign in</a></li>
-            <li><a>|</a></li>	
-			<li><a href="~/Register.aspx" runat="server">Register</a></li>
-		</ul>
-       </div> 
-
-<!-- Logo and Name of the Instrument -->
-    <div id="NavigationBar">
-        <div id="Logo">
-           <h1>Darbuka</h1>
+        <!-- Sign in and Register Navigation-->
+        <div id="TopBar">
+           
+            <!-- Logo div -->
+            <div id="Logo">
+               <a><img src="Pictures/Logo_Darbuka.png" alt="Ad-Darbuka's Logo"></a>
+            </div>
+            <!-- Navigation Menu Dic -->
+            <div id="navigation">			
+	            <ul>
+			        <li><a href="~/Default" runat="server">HOME</a></li>
+                    <li><a href="~/Doumbek" runat="server">DOUMBEK</a></li>
+                    <li><a href="~/Accessories"  runat="server">ACCESSORIES</a></li>
+                    <li><a href="~/Contact" runat="server">CONTACT US</a></li>
+		        </ul>			
+	        </div>
         </div>
-
-<!-- Main Navigation Tab -->
-        <div id="navigation">			
-	        <ul>
-			    <li><a href="~/Default" runat="server">HOME</a></li>
-                <li><a href="~/Doumbek" runat="server">DOUMBEK</a></li>
-                <li><a href="~/Accessories"  runat="server">ACCESSORIES</a></li>
-                <li><a href="~/Contact" runat="server">CONTACT US</a></li>
-		    </ul>			
-	    </div>
-    </div>
 
 <!-- Product pictures and prices -->
     <div id="content">
@@ -75,10 +74,10 @@
     </div>
 
 <!-- Footer of the page -->
-    <div id="FooterGrey"></div>
-
-    <div id="FooterWhite">
-        <p>&copy; 2018 Arab Instruments. All Right Reserved.</p>
+    <div id="FooterBottom">
+        <div id="Copyrights">
+            <p>&copy; 2018 AD DARBUKA. ALL RIGHT RESERVED.</p>
+        </div>
     </div>	
 
 

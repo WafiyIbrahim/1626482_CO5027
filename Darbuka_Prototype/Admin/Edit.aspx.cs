@@ -16,5 +16,20 @@ namespace Darbuka_Prototype.Admin
 
             ImageEditPage.ImageUrl = "~/ProductImages/" + filename;
         }
+
+        protected void FormView1_PageIndexChanging(object sender, FormViewPageEventArgs e)
+        {
+
+        }
+
+        protected void btnBackToAdmin_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Admin/index.aspx");
+        }
+
+        protected void btnBackToList_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Admin/ListPage.aspx");
+        }
     }
 }

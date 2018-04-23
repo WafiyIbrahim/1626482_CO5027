@@ -14,12 +14,10 @@
             <asp:TextBox ID="txtRegEmail" runat="server"></asp:TextBox>
 
         <!-- Password Field -->
-        <p></p>
             <asp:Label ID="lblRegPassword" runat="server" Text="Password"></asp:Label>
             <asp:TextBox ID="txtRegPassword" runat="server" TextMode="Password"></asp:TextBox>
 
         <!-- Register Button -->
-        <p></p>
             <asp:Button ID="btnRegister" runat="server" Text="Register" OnClick="btnRegister_Click" />
         <p></p>
             <asp:Literal ID="litRegisterError" runat="server"></asp:Literal>

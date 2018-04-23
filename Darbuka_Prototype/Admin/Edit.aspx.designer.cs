@@ -13,13 +13,22 @@ namespace Darbuka_Prototype.Admin {
     public partial class Edit {
         
         /// <summary>
-        /// editForm control.
+        /// viewForm control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm editForm;
+        protected global::System.Web.UI.HtmlControls.HtmlForm viewForm;
+        
+        /// <summary>
+        /// btnBackToAdmin control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnBackToAdmin;
         
         /// <summary>
         /// FormView1 control.
@@ -47,5 +56,14 @@ namespace Darbuka_Prototype.Admin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Image ImageEditPage;
+        
+        /// <summary>
+        /// btnBackToList control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnBackToList;
     }
 }

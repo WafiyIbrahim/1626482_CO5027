@@ -2,11 +2,15 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="Title" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Heading2" runat="server">
+    Add Product Here
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="MainContent" runat="server">
+    <form id="form1" runat="server">
 
-    <h1>Add Product Here</h1>
-      <form runat="server">
+    <!-- Button Back to Admin Panel -->
+    <asp:Button ID="btnBackToAdmin" runat="server" Text="Back to Admin Panel" OnClick="btnBackToAdmin_Click" />
+
+          <!-- Form view for List page -->
           <asp:FormView ID="FormView1" runat="server" DataKeyNames="ProductID" DataSourceID="SqlDataSource1" DefaultMode="Insert">
               <EditItemTemplate>
                   ProductID:

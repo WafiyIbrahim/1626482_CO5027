@@ -10,13 +10,13 @@
         <h1>Log In</h1>
 
         <!-- Username Field -->
-        <asp:Label ID="lblLoginEmail" runat="server" Text="Username"></asp:Label>
+        <asp:Label ID="lblLoginEmail" runat="server" Text="Username: "></asp:Label>
         <asp:TextBox ID="txtLoginEmail" runat="server"></asp:TextBox>
 
     <p></p>
         <!-- Passwoerd Field -->
-        <asp:Label ID="lblLoginPassword" runat="server" Text="Password"></asp:Label>
-        <asp:TextBox ID="txtLoginPassword" runat="server" TextMode="Password"></asp:TextBox>
+        <asp:Label ID="lblLoginPassword" runat="server" Text="Password: "></asp:Label>
+        <asp:TextBox ID="txtLoginPassword" runat="server" TextMode="Password" Width="8cm"></asp:TextBox>
     <p></p>
         <!-- Login Button -->
         <asp:Button ID="btnLogin" runat="server" Text="Log In" OnClick="btnLogin_Click" />
