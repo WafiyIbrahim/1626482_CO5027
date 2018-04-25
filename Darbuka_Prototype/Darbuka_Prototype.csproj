@@ -165,19 +165,18 @@
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="Admin\AddPage.aspx" />
+    <Content Include="Admin\EditPage.aspx" />
     <Content Include="Admin\index.aspx" />
-    <Content Include="Admin\Edit.aspx" />
     <Content Include="Admin\ListPage.aspx" />
+    <Content Include="Admin\Pictures\BannerAdmin.jpg" />
     <Content Include="Admin\Pictures\Logo_Darbuka.png" />
-    <Content Include="Admin\UploadImage.aspx" />
+    <Content Include="Admin\UploadImagePage.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="css\StyleSheet.css" />
-    <Content Include="DarbukDetail.PNG" />
     <Content Include="Default.aspx" />
-    <Content Include="DetailDarbuk1.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -192,11 +191,11 @@
     <Content Include="Admin\Web.config">
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="MyAdmin.Master" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Pictures\BannerAdmin.jpg" />
     <Content Include="Pictures\BannerHomepage.jpg" />
-    <Content Include="Pictures\Darbuk1.PNG" />
-    <Content Include="Pictures\DarbukDetail.PNG" />
     <Content Include="Pictures\Logo_Darbuka.png" />
     <Content Include="ProductDesc.aspx" />
     <Content Include="Scripts\bootstrap.js" />
@@ -229,7 +228,6 @@
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Register.aspx" />
     <Content Include="Site.Master" />
-    <Content Include="StyleSheet.css" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -238,12 +236,26 @@
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MyAdmin.Master.cs">
+      <DependentUpon>MyAdmin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyAdmin.Master.designer.cs">
+      <DependentUpon>MyAdmin.Master</DependentUpon>
+    </Compile>
     <Compile Include="Admin\AddPage.aspx.cs">
       <DependentUpon>AddPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Admin\AddPage.aspx.designer.cs">
       <DependentUpon>AddPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\EditPage.aspx.cs">
+      <DependentUpon>EditPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\EditPage.aspx.designer.cs">
+      <DependentUpon>EditPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
@@ -252,13 +264,6 @@
     <Compile Include="Admin\index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Admin\Edit.aspx.cs">
-      <DependentUpon>Edit.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Admin\Edit.aspx.designer.cs">
-      <DependentUpon>Edit.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Admin\ListPage.aspx.cs">
       <DependentUpon>ListPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -266,12 +271,12 @@
     <Compile Include="Admin\ListPage.aspx.designer.cs">
       <DependentUpon>ListPage.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Admin\UploadImage.aspx.cs">
-      <DependentUpon>UploadImage.aspx</DependentUpon>
+    <Compile Include="Admin\UploadImagePage.aspx.cs">
+      <DependentUpon>UploadImagePage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Admin\UploadImage.aspx.designer.cs">
-      <DependentUpon>UploadImage.aspx</DependentUpon>
+    <Compile Include="Admin\UploadImagePage.aspx.designer.cs">
+      <DependentUpon>UploadImagePage.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
@@ -295,13 +300,6 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="DetailDarbuk1.aspx.cs">
-      <DependentUpon>DetailDarbuk1.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="DetailDarbuk1.aspx.designer.cs">
-      <DependentUpon>DetailDarbuk1.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -360,6 +358,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Pictures\ProductPic\" />
     <Folder Include="ProductImages\" />
   </ItemGroup>
   <ItemGroup>

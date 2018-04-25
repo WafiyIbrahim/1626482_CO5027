@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace Darbuka_Prototype
 {
-    public partial class DetailDarbuk1 : System.Web.UI.Page
+    public partial class MyAdmin : System.Web.UI.MasterPage
     {
         protected void Page_Load(object sender, EventArgs e)
         {

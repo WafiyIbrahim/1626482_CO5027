@@ -10,7 +10,16 @@
 namespace Darbuka_Prototype.Admin {
     
     
-    public partial class UploadImage {
+    public partial class UploadImagePage {
+        
+        /// <summary>
+        /// viewForm control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlForm viewForm;
         
         /// <summary>
         /// imageFileUploadControl control.
@@ -22,6 +31,15 @@ namespace Darbuka_Prototype.Admin {
         protected global::System.Web.UI.WebControls.FileUpload imageFileUploadControl;
         
         /// <summary>
+        /// ImageEditPage control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image ImageEditPage;
+        
+        /// <summary>
         /// btnUpload control.
         /// </summary>
         /// <remarks>
@@ -29,14 +47,5 @@ namespace Darbuka_Prototype.Admin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnUpload;
-        
-        /// <summary>
-        /// CurrentImage control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Image CurrentImage;
     }
 }

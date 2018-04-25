@@ -7,11 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace Darbuka_Prototype.Admin
 {
-	public partial class AddPage1 : System.Web.UI.Page
-	{
-		protected void Page_Load(object sender, EventArgs e)
-		{
+    public partial class EditPage : System.Web.UI.Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
 
-		}
-	}
+        }
+    }
 }

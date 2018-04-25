@@ -7,23 +7,39 @@
      <form runat="server">
 
     <div id="LoginPage">
-        <h1>Log In</h1>
+        <h1>SIGN IN</h1>
 
-        <!-- Username Field -->
-        <asp:Label ID="lblLoginEmail" runat="server" Text="Username: "></asp:Label>
-        <asp:TextBox ID="txtLoginEmail" runat="server"></asp:TextBox>
+        <div id="LoginForm">
+            <!-- Username Field -->
+            <div id="LoginEmailLabel">
+                <asp:Label ID="lblLoginEmail" runat="server" Text="USERNAME: "></asp:Label>
+            </div>
 
-    <p></p>
-        <!-- Passwoerd Field -->
-        <asp:Label ID="lblLoginPassword" runat="server" Text="Password: "></asp:Label>
-        <asp:TextBox ID="txtLoginPassword" runat="server" TextMode="Password" Width="8cm"></asp:TextBox>
-    <p></p>
-        <!-- Login Button -->
-        <asp:Button ID="btnLogin" runat="server" Text="Log In" OnClick="btnLogin_Click" />
-    <p></p>
-        <asp:Literal ID="litLoginError" runat="server"></asp:Literal>
+            <div id="LoginEmailBox">
+                <asp:TextBox ID="txtLoginEmail" runat="server"></asp:TextBox>
+            </div>
 
-     </div>
+            <!-- Passwoerd Field -->
+            <div id="LoginPasswordLabel">
+                <asp:Label ID="lblLoginPassword" runat="server" Text="PASSWORD: "></asp:Label>
+            </div>
+
+            <div id="LoginPasswordBox">
+                <asp:TextBox ID="txtLoginPassword" runat="server" TextMode="Password"></asp:TextBox>
+            </div>
+   
+            <!-- Login Button -->
+            <div id="buttonLogin">
+                <asp:Button ID="btnLogin" runat="server" Text="Log In" OnClick="btnLogin_Click" />
+            </div>
+            
+            <div id="LoginError">
+                <asp:Literal ID="litLoginError" runat="server"></asp:Literal>
+            </div>
+            
+        </div>
+
+    </div>
         
      </form>
 </asp:Content>

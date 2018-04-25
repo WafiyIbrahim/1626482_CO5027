@@ -1,19 +1,20 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MySite.Master" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="Darbuka_Prototype.Admin.Default" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MyAdmin.Master" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="Darbuka_Prototype.Admin.index" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="Title" runat="server">
+    Ad Darbuka - Admin
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Heading2" runat="server">
-     Admin Panel for Admin
+    ADMIN PANEL
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="MainContent" runat="server">
-    <form id="AdminPage" runat="server">
 
-        <asp:Button ID="btnAddProduct" runat="server" Text="Add Product" OnClick="btnAddProduct_Click" />
-        
-        <asp:Button ID="btnEditProduct" runat="server" Text="Edit Product" OnClick="btnEditProduct_Click" />
+    <div id="AdminBanner">
+        <a><img src="Pictures/BannerAdmin.jpg" alt="Banner"></a>
+    </div>
 
-        <p> click here to log out</p>
-      <asp:Button ID="btnLogout" runat="server" Text="Logout" OnClick="btnLogout_Click" />
+    <form id="viewForm" runat="server">
+        <asp:Button ID="btnLogout" runat="server" Text="Logout" OnClick="btnLogout_Click" Height="1cm" Width="2cm" />
     </form>
+
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="GoogleMap" runat="server">
 </asp:Content>

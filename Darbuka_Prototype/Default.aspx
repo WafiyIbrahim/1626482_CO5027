@@ -34,3 +34,5 @@
     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:db_1626482_co5027_asgConnectionString %>" SelectCommand="SELECT * FROM [ProductTable]"></asp:SqlDataSource>
 
 </asp:Content>
+
+

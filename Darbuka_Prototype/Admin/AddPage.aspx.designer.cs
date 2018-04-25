@@ -10,25 +10,16 @@
 namespace Darbuka_Prototype.Admin {
     
     
-    public partial class AddPage {
+    public partial class AddPage1 {
         
         /// <summary>
-        /// form1 control.
+        /// viewForm control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
-        
-        /// <summary>
-        /// btnBackToAdmin control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnBackToAdmin;
+        protected global::System.Web.UI.HtmlControls.HtmlForm viewForm;
         
         /// <summary>
         /// FormView1 control.
