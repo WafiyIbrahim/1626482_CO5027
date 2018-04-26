@@ -7,7 +7,7 @@
     <form runat="server">
 
     <div id="contactInfo">
-        <h1>CONTACT US</h1>
+        <h1>CONTACT uS</h1>
 
         <!-- Summary Validation -->
         <asp:ValidationSummary ID="ValidationSummary1" runat="server" />
