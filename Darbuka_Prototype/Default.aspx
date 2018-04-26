@@ -12,7 +12,7 @@
             <div id="HomepageBanner">
                <a><img src="Pictures/BannerHomepage.jpg" alt="Banner"></a>
             </div>
-
+    
 <!-- Below are the codes for List of Products -->
     <form id="form1" runat="server">
         <asp:Repeater ID="Repeater1" runat="server" DataSourceID="SqlDataSource1">
