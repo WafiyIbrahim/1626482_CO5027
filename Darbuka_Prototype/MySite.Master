@@ -30,15 +30,13 @@
       }
     </style>
 </head>
-<!------------------------------------------ START HERE ------------------------------------------>
+<!------------------------------------------ MASTER SITE ------------------------------------------>
 <body runat="server">
 
 <div id="page">
      <!-- SignIn and Register div -->
             <div id="SigninAndRegister">
-                <ul>
-			        <li><a href="~/LogIn.aspx" runat="server">Sign In</a></li>
-                    <li><a> or </a></li>	
+                <ul>	
 			        <li><a href="~/Register.aspx" runat="server">Create an Account</a></li>
 		        </ul>
             </div>
@@ -54,11 +52,11 @@
             <!-- Navigation Menu Dic -->
             <div id="navigation">			
 	            <ul>
-			        <li><a href="~/Default" runat="server">HOME</a></li>
-                    <li><a href="~/Doumbek" runat="server">DOUMBEK</a></li>
-                    <li><a href="~/Accessories"  runat="server">ACCESSORIES</a></li>
-                    <li><a href="~/Contact" runat="server">CONTACT US</a></li>
-		        </ul>			
+			        <li><a href="~/Default.aspx" runat="server">HOME</a></li>
+                    <li><a href="~/Doumbek.aspx" runat="server">DOUMBEK</a></li>
+                    <li><a href="~/Contact.aspx" runat="server">CONTACT US</a></li>
+                    <li><a href="~/LogIn.aspx" runat="server">LOG-IN</a></li>
+		        </ul>	 		
 	        </div>
         </div>
 
@@ -82,7 +80,7 @@
 
 
     </div>
-    </div>
+</div>
 
     <asp:ContentPlaceHolder ID="GoogleMap" runat="server"></asp:ContentPlaceHolder>
 
