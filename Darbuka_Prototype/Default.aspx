@@ -21,8 +21,8 @@
                 <ItemTemplate>
                     <li>
                         <a href="<%#Eval ("ProductId","ProductDesc.aspx?Id={0}") %>">
-                            <!-- <img src='%#Eval " -->
-                            <%#Eval ("ProductName")%>
+                            <asp:Image ID="ImageDefault" runat="server" ImageUrl='<%#Eval ("Pictures" %>' /><p></p> 
+                            <%#Eval ("ProductName")%><p>Price:<%#Eval ("ProductPrice") %></p>
                         </a>
                     </li>
                 </ItemTemplate>
