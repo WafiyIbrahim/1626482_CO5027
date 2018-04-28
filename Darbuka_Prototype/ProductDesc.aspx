@@ -7,9 +7,7 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="MainContent" runat="server">
     <form id="form1" runat="server">
 
-    <asp:Image ID="ImageProductPage" runat="server" />
-
-    <asp:FormView ID="FormView1" runat="server" DataKeyNames="ProductID" DataSourceID="SqlDataSource1">
+    <asp:FormView ID="FormView1" runat="server" DataKeyNames="ProductID" DataSourceID="SqlDataSource1" Width="607px">
         <EditItemTemplate>
             ProductID:
             <asp:Label ID="ProductIDLabel1" runat="server" Text='<%# Eval("ProductID") %>' />
@@ -19,6 +17,15 @@
             <br />
             ProductDesc:
             <asp:TextBox ID="ProductDescTextBox" runat="server" Text='<%# Bind("ProductDesc") %>' />
+            <br />
+            ProductPrice:
+            <asp:TextBox ID="ProductPriceTextBox" runat="server" Text='<%# Bind("ProductPrice") %>' />
+            <br />
+            ProductQuantity:
+            <asp:TextBox ID="ProductQuantityTextBox" runat="server" Text='<%# Bind("ProductQuantity") %>' />
+            <br />
+            ProductImage:
+            <asp:TextBox ID="ProductImageTextBox" runat="server" Text='<%# Bind("ProductImage") %>' />
             <br />
             <asp:LinkButton ID="UpdateButton" runat="server" CausesValidation="True" CommandName="Update" Text="Update" />
             &nbsp;<asp:LinkButton ID="UpdateCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
@@ -33,6 +40,15 @@
             ProductDesc:
             <asp:TextBox ID="ProductDescTextBox" runat="server" Text='<%# Bind("ProductDesc") %>' />
             <br />
+            ProductPrice:
+            <asp:TextBox ID="ProductPriceTextBox" runat="server" Text='<%# Bind("ProductPrice") %>' />
+            <br />
+            ProductQuantity:
+            <asp:TextBox ID="ProductQuantityTextBox" runat="server" Text='<%# Bind("ProductQuantity") %>' />
+            <br />
+            ProductImage:
+            <asp:TextBox ID="ProductImageTextBox" runat="server" Text='<%# Bind("ProductImage") %>' />
+            <br />
             <asp:LinkButton ID="InsertButton" runat="server" CausesValidation="True" CommandName="Insert" Text="Insert" />
             &nbsp;<asp:LinkButton ID="InsertCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
         </InsertItemTemplate>
@@ -45,6 +61,16 @@
             <br />
             ProductDesc:
             <asp:Label ID="ProductDescLabel" runat="server" Text='<%# Bind("ProductDesc") %>' />
+            <br />
+
+            ProductPrice:
+            <asp:Label ID="ProductPriceLabel" runat="server" Text='<%# Bind("ProductPrice") %>' />
+            <br />
+            ProductQuantity:
+            <asp:Label ID="ProductQuantityLabel" runat="server" Text='<%# Bind("ProductQuantity") %>' />
+            <br />
+            ProductImage:
+            <asp:Image ID="Image1" runat="server" ImageUrl='<%# Eval("ProductImage") %>' />
             <br />
 
         </ItemTemplate>

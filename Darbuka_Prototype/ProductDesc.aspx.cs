@@ -11,10 +11,7 @@ namespace Darbuka_Prototype
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            String productId = Request.QueryString["Id"];
-            String filename = productId + ".jpg";
 
-            ImageProductPage.ImageUrl = "~/Pictures/ProductPic/" + filename;
         }
 
         protected void btnPurchase_Click(object sender, EventArgs e)
