@@ -17,7 +17,7 @@
                 <asp:BoundField DataField="ProductQuantity" HeaderText="ProductQuantity" SortExpression="ProductQuantity" />
                 <asp:HyperLinkField DataNavigateUrlFields="ProductID" DataNavigateUrlFormatString="EditPage.aspx?Id={0}" HeaderText="ProductEdit" Text="Edit" />
                 <asp:HyperLinkField DataNavigateUrlFields="ProductID" DataNavigateUrlFormatString="UploadImagePage.aspx?Id={0}" HeaderText="UploadImage" Text="Upload" />
-                <asp:ImageField DataImageUrlField="ProductImage" HeaderText="Image">
+                <asp:ImageField DataImageUrlField="ProductImage" HeaderText="Image" >
                 </asp:ImageField>
                 <asp:CommandField ShowDeleteButton="True" />
             </Columns>

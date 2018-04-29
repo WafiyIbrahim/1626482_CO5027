@@ -194,8 +194,6 @@
     <Content Include="MyAdmin.Master" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
-    <Content Include="Pictures\1.jpg" />
-    <Content Include="Pictures\2.jpg" />
     <Content Include="Pictures\BannerAdmin.jpg" />
     <Content Include="Pictures\BannerHomepage.jpg" />
     <Content Include="Pictures\Logo_Darbuka.png" />

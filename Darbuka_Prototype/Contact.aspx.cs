@@ -21,7 +21,7 @@ namespace Darbuka_Prototype
 
                 //create mail client and message with to and from address, and set message subject and body
                 SmtpClient smtpClient = new SmtpClient();
-                MailMessage msg = new MailMessage("wafiyhajibrahim@gmail.com", "wafiyhajibrahim@gmail.com");
+                MailMessage msg = new MailMessage("AdDarbuka@gmail.com", "AdDarbuka@gmail.com");
                 msg.Subject = txtSubject.Text;
                 msg.Body = txtBody.Text;
 
@@ -31,7 +31,7 @@ namespace Darbuka_Prototype
                 smtpClient.EnableSsl = true;
 
                 //create credentials - e.g. username and password for the account
-                System.Net.NetworkCredential credentials = new System.Net.NetworkCredential("wafiyhajibrahim@gmail.com", "wafiy6738249544");
+                System.Net.NetworkCredential credentials = new System.Net.NetworkCredential("AdDarbuka@gmail.com", "changeMe123!");
                 smtpClient.Credentials = credentials;
 
                 try
