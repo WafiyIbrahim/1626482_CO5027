@@ -64,8 +64,6 @@
     </div>
 </div>
 
-    <asp:ContentPlaceHolder ID="GoogleMap" runat="server"></asp:ContentPlaceHolder>
-
 </body>
 
 </html>

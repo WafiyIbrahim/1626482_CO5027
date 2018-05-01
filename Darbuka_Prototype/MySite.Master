@@ -25,7 +25,9 @@
 <div id="page">
      <!-- SignIn and Register div -->
             <div id="SigninAndRegister">
+                <a href="~/ShoppingCart/UserCart.aspx" runat="server"><img src="Pictures/ShoppingCartWhite.png" alt="Shopping Cart"></a>
 			    <a href="~/Register.aspx" runat="server">Create an Account</a>
+                
             </div>
         <div id="contentArea">
 
@@ -48,28 +50,27 @@
 
 <!-- Product pictures and prices -->
     <div id="content">
-        <h2>
             <asp:ContentPlaceHolder ID="Heading2" runat="server">
             </asp:ContentPlaceHolder>
-        </h2>
 
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
+
     </div>
 
+
+
+    </div>
+</div>
+
+<!-- Google Map --> 
+<asp:ContentPlaceHolder ID="GoogleMap" runat="server"></asp:ContentPlaceHolder>
 <!-- Footer of the page -->
     <div id="FooterBottom">
         <div id="Copyrights">
             <p>&copy; 2018 AD DARBUKA. ALL RIGHT RESERVED.</p>
         </div>
     </div>	
-
-
-    </div>
-</div>
-
-    <asp:ContentPlaceHolder ID="GoogleMap" runat="server"></asp:ContentPlaceHolder>
-
 </body>
 
 </html>

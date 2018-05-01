@@ -170,7 +170,6 @@
     <Content Include="Admin\ListPage.aspx" />
     <Content Include="Admin\Pictures\BannerAdmin.jpg" />
     <Content Include="Admin\Pictures\Logo_Darbuka.png" />
-    <Content Include="Admin\UploadImagePage.aspx" />
     <Content Include="CompletePurchase.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap.css" />
@@ -198,6 +197,8 @@
     <Content Include="Pictures\BannerAdmin.jpg" />
     <Content Include="Pictures\BannerHomepage.jpg" />
     <Content Include="Pictures\Logo_Darbuka.png" />
+    <Content Include="Pictures\ShoppingCart.png" />
+    <Content Include="Pictures\ShoppingCartWhite.png" />
     <Content Include="ProductDesc.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -229,6 +230,7 @@
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Register.aspx" />
     <Content Include="ShoppingCart\Pictures\Logo_Darbuka.png" />
+    <Content Include="ShoppingCart\Pictures\ShoppingCartWhite.png" />
     <Content Include="ShoppingCart\UserCart.aspx" />
     <Content Include="Site.Master" />
     <Content Include="ViewSwitcher.ascx" />
@@ -280,13 +282,6 @@
     </Compile>
     <Compile Include="Admin\ListPage.aspx.designer.cs">
       <DependentUpon>ListPage.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Admin\UploadImagePage.aspx.cs">
-      <DependentUpon>UploadImagePage.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Admin\UploadImagePage.aspx.designer.cs">
-      <DependentUpon>UploadImagePage.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">

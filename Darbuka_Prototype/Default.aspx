@@ -4,7 +4,6 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="Heading2" runat="server">
-    This homepage
 </asp:Content>
 
 <asp:Content ID="Content3" ContentPlaceHolderID="MainContent" runat="server">
@@ -19,12 +18,16 @@
             <HeaderTemplate><ul></HeaderTemplate>
 
                 <ItemTemplate>
-                    <li>
-                        <a href='<%#Eval ("ProductId","ProductDesc.aspx?Id={0}") %>'>
-                            <asp:Image ID="ImageDefault" runat="server" height="250" Width="200"  ImageUrl='<%#Eval ("ProductImage") %>' /><p></p> 
-                            <%#Eval ("ProductName")%><p>Price:<%#Eval ("ProductPrice") %></p>
-                        </a>
-                    </li>
+                    <table id="tableProduct">
+                        <tr>
+                            <td>
+                            <a href='<%#Eval ("ProductId","ProductDesc.aspx?Id={0}") %>'>
+                                <asp:Image ID="ImageDefault" runat="server" height="250" Width="200"  ImageUrl='<%#Eval ("ProductImage") %>' />
+                                <p><%#Eval ("ProductName")%></p> <p>Price:<%#Eval ("ProductPrice") %></p>
+                            </a>
+                            </td>
+                        </tr>
+                    </table>   
                 </ItemTemplate>
 
             <FooterTemplate></ul></FooterTemplate>

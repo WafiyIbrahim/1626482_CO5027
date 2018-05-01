@@ -13,7 +13,7 @@
             <table id="LoginTable">
             <!-- Username Field -->
                 <tr>
-                    <td style="height: 23px"><asp:Label ID="lblLoginEmail" runat="server" Text="USERNAME: " CssClass="lblLoginEmail"></asp:Label></td>
+                    <td><asp:Label ID="lblLoginEmail" runat="server" Text="USERNAME: " CssClass="lblLoginEmail"></asp:Label></td>
                 </tr>
 
                 <tr>
@@ -41,7 +41,6 @@
            </div>
         </div>
 
-           
            <!-- Display Error -->
            <div id="litMsg">
                 <asp:Literal ID="litLoginError" runat="server"></asp:Literal>
@@ -51,7 +50,7 @@
         
     </div>
         
-     </form>
+    </form>
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="GoogleMap" runat="server">
 </asp:Content>

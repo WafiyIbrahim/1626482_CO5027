@@ -1,20 +1,26 @@
 ﻿html, body {
+    height: 100%;
     margin: 0;
     padding: 0;
     border: 0;
     background: transparent;
 }
 
-/* Always set the map height explicitly to define the size of the div
-       * element that contains the map. */
-#map {
-    height: 100%;
+/*Text Elements*/
+h1 {
+    font-family: Calibri;
+    font-weight: bold;
 }
-/* Optional: Makes the sample page fill the window. */
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
+h2 {
+    font-family: Calibri;
+    font-weight: bold;
+}
+
+/* This is the CSS for Google Map */
+#map {
+    height: 50%;
+    width: 850px;
+    margin: 0 auto 0 auto;
 }
 
 /* This is the CSS for MySite.Master and MyAdmin.Master */
@@ -23,7 +29,7 @@ html, body {
     width: 100%;
     margin: auto;
     background-color: #ffffff;
-    min-height: 500px;
+    /*min-height: 500px;*/
 }
 
 #contentArea {
@@ -61,7 +67,14 @@ html, body {
     font-weight: normal; 
     float: right;
     margin: 10px 10px 0 auto;
-} 
+}
+
+    #SigninAndRegister a img {
+        width: 20px;
+        height: 20px;
+        float: right;
+        margin: 0 auto 5px auto;
+    }
 
 #navigation {
     background-color: #ffffff;
@@ -101,6 +114,7 @@ html, body {
     width: 100%;
     background-color: #404042;
     height: 1cm;
+    clear:both;
 }
 
 #Copyrights {
@@ -129,6 +143,16 @@ html, body {
     display: block;
     margin: 0 auto 0 auto;
 }
+
+#tableProduct {
+    width: 25%;
+    margin: 9px;
+    float: left;
+}
+
+    #tableProduct td {
+        padding: 3px 10px;
+    }
 
 /* This is the CSS for EditPage.aspx*/
 #ImageEditPage {
@@ -209,6 +233,151 @@ html, body {
    text-align: center;
    font-family: 'Times New Roman';
    text-decoration: none;
-    
-
 }
+
+/*This is the CSS for Register.aspx*/
+#RegisterPage {
+    background-color: white;
+}
+
+#RegisterPage h1 {
+    text-align: center;
+    color: white;
+    background-color: #181729;
+    font-family: Calibri;
+}
+
+#RegisterForm {
+    background-color: white;
+    width: 400px;
+    height: auto;
+    margin: 0 auto 30px auto;
+}
+
+#RegisterTable {
+    height: 100px;
+    width: 250px;
+    margin: 30px auto;
+}
+
+.txtRegEmail {
+    height: 30px;
+    width: 250px;
+}
+
+.lblRegEmail {
+    font-family: Calibri;
+    font-weight: bold;
+}
+
+.txtRegPassword {
+    height: 30px;
+    width: 250px;
+}
+
+
+.lblRegPassword {
+    font-family: Calibri;
+    font-weight: bold;
+}
+
+.btnReg {
+    height: 35px;
+    width: 255px;
+    font-family: Calibri;
+    font-weight: bold;
+    font-size: medium;
+}
+
+#RegBtn {
+    width: 255px;
+    margin: 0 auto 0 75px;
+}
+
+#litMsg {
+    width: 250px;
+    margin: 0 auto 0 auto;
+}
+
+#LoginLink a p {
+    text-align: center;
+    font-family: 'Times New Roman';
+    text-decoration: none;
+}
+
+/*This is the CSS for Contact.aspx*/
+#contactInfo {
+    background-color: white;
+}
+
+    #contactInfo h1 {
+        text-align: center;
+        color: white;
+        background-color: #181729;
+        font-family: Calibri;
+    }
+
+#ContactForm {
+    background-color: white;
+    width: 400px;
+    height: auto;
+    margin: 0 auto 30px auto;
+}
+
+#ContactTable {
+    height: 100px;
+    width: 250px;
+    margin: 30px auto;
+}
+
+.EmailBox {
+    height: 30px;
+    width: 250px;
+}
+
+.lblEmail {
+    font-family: Calibri;
+    font-weight: bold;
+}
+
+.SubjectBox {
+    height: 30px;
+    width: 250px;
+}
+
+
+.lblSubject {
+    font-family: Calibri;
+    font-weight: bold;
+}
+
+.MsgBox {
+    height: 100px;
+    width: 250px;
+}
+
+
+.lblMsg {
+    font-family: Calibri;
+    font-weight: bold;
+}
+
+.btnSendingMsg {
+    height: 35px;
+    width: 255px;
+    font-family: Calibri;
+    font-weight: bold;
+    font-size: medium;
+}
+
+#btnSendingMsg {
+    width: 255px;
+    margin: 0 auto 0 75px;
+}
+
+#litMsg {
+    width: 250px;
+    margin: 0 auto 0 auto;
+}
+
+

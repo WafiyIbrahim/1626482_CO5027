@@ -68,8 +68,8 @@ namespace Darbuka_Prototype
             payer.payment_method = "paypal";
 
             var redirectUrls = new RedirectUrls();
-            redirectUrls.cancel_url = "http://" + HttpContext.Current.Request.Url.Authority + "Default.aspx";
-            redirectUrls.return_url = "http://" + HttpContext.Current.Request.Url.Authority + "CompletePurcahse.aspx";
+            redirectUrls.cancel_url = "http://" + HttpContext.Current.Request.Url.Authority + "/Default.aspx";
+            redirectUrls.return_url = "http://" + HttpContext.Current.Request.Url.Authority + "/CompletePurcahse.aspx";
 
 
             var payment = Payment.Create(apiContext, new Payment

@@ -7,20 +7,45 @@
     <form runat="server">
 
     <div id="RegisterPage">
-        <h1>Register</h1>
+        <h1>REGISTER</h1>
 
-        <!-- Username Field -->
-            <asp:Label ID="lblRegEmail" runat="server" Text="Username"></asp:Label>
-            <asp:TextBox ID="txtRegEmail" runat="server"></asp:TextBox>
+        <div id="RegisterForm">
+            <table id="RegisterTable">
+            <!-- Username Field -->
+                <tr>
+                    <td><asp:Label ID="lblRegEmail" runat="server" Text="Username" CssClass="lblRegEmail"></asp:Label></td>
+                </tr>
 
-        <!-- Password Field -->
-            <asp:Label ID="lblRegPassword" runat="server" Text="Password"></asp:Label>
-            <asp:TextBox ID="txtRegPassword" runat="server" TextMode="Password"></asp:TextBox>
+                <tr>
+                    <td><asp:TextBox ID="txtRegEmail" runat="server" CssClass="txtRegEmail"></asp:TextBox></td>
+                </tr>
+                
+            <!-- Password Field -->
+                <tr>
+                    <td><asp:Label ID="lblRegPassword" runat="server" Text="Password" CssClass="lblRegPassword"></asp:Label></td>
+                </tr>
+               
+                <tr>
+                    <td><asp:TextBox ID="txtRegPassword" runat="server" TextMode="Password" CssClass="txtRegPassword"></asp:TextBox></td>
+                </tr>
+               
 
-        <!-- Register Button -->
-            <asp:Button ID="btnRegister" runat="server" Text="Register" OnClick="btnRegister_Click" />
-        <p></p>
-            <asp:Literal ID="litRegisterError" runat="server"></asp:Literal>
+            </table>
+
+            <!-- Register Button -->
+            <div id="RegBtn">
+                <asp:Button ID="btnRegister" runat="server" Text="Register" OnClick="btnRegister_Click" CssClass="btnReg" />
+            </div>
+            
+            <!-- Register link -->
+           <div id="LoginLink">
+               <a href="~/LogIn.aspx" runat="server"><p>Already have an account?</p></a>
+           </div>
+        </div>
+            <!-- Display Error -->
+               <div id="litMsg">
+                    <asp:Literal ID="litRegisterError" runat="server"></asp:Literal>
+               </div>
 
     </div>
 
