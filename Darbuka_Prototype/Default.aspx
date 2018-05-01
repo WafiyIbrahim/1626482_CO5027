@@ -8,7 +8,7 @@
 </asp:Content>
 
 <asp:Content ID="Content3" ContentPlaceHolderID="MainContent" runat="server">
-<!-- Below are the codes for Homepage Banner -->
+    <!-- Below are the codes for Homepage Banner -->
             <div id="HomepageBanner">
                <a><img src="Pictures/BannerHomepage.jpg" alt="Banner"></a>
             </div>
@@ -20,7 +20,7 @@
 
                 <ItemTemplate>
                     <li>
-                        <a href="<%#Eval ("ProductId","ProductDesc.aspx?Id={0}") %>">
+                        <a href='<%#Eval ("ProductId","ProductDesc.aspx?Id={0}") %>'>
                             <asp:Image ID="ImageDefault" runat="server" height="250" Width="200"  ImageUrl='<%#Eval ("ProductImage") %>' /><p></p> 
                             <%#Eval ("ProductName")%><p>Price:<%#Eval ("ProductPrice") %></p>
                         </a>

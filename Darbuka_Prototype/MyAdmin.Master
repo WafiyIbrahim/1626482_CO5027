@@ -13,32 +13,14 @@
 
     <link href="~/css/StyleSheet.css" rel="stylesheet" type="text/css">
 
-<!-- Google Map-->
-     <meta name="viewport" content="initial-scale=1.0">
-    <meta charset="utf-8">
-    <style>
-      /* Always set the map height explicitly to define the size of the div
-       * element that contains the map. */
-      #map {
-        height: 100%;
-      }
-      /* Optional: Makes the sample page fill the window. */
-      html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
-    </style>
 </head>
-<!------------------------------------------ MASTER SITE ------------------------------------------>
+<!-- MASTER SITE -->
 <body runat="server">
 
 <div id="page">
      <!-- SignIn and Register div -->
-            <div id="SigninAndRegister">
-                <ul>	
-			        <li><a href="~/Register.aspx" runat="server">Create an Account</a></li>
-		        </ul>
+            <div id="SigninAndRegister">	
+			    <a href="~/Register.aspx" runat="server">Create an Account</a>
             </div>
         <div id="contentArea">
 
@@ -52,6 +34,7 @@
             <!-- Navigation Menu Dic -->
             <div id="navigation">			
 	            <ul>
+                    <li><a href="~/Default.aspx" runat="server">HOME</a></li>
 			        <li><a href="~/Admin/index.aspx" runat="server">ADMIN</a></li>
                     <li><a href="~/Admin/AddPage.aspx" runat="server">ADD PRODUCT</a></li>
                     <li><a href="~/Admin/ListPage.aspx" runat="server">EDIT PRODUCT</a></li>

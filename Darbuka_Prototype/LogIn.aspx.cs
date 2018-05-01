@@ -52,6 +52,10 @@ namespace Darbuka_Prototype
                 {
                     Response.Redirect("~/admin/index.aspx");
                 }
+                else if (userRoles.Equals("RegisteredUser"))
+                {
+                    Response.Redirect("~/ShoppingCart/UserCart.aspx");
+                }
             }
         }
     }

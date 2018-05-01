@@ -10,35 +10,45 @@
         <h1>SIGN IN</h1>
 
         <div id="LoginForm">
+            <table id="LoginTable">
             <!-- Username Field -->
-            <div id="LoginEmailLabel">
-                <asp:Label ID="lblLoginEmail" runat="server" Text="USERNAME: "></asp:Label>
-            </div>
+                <tr>
+                    <td style="height: 23px"><asp:Label ID="lblLoginEmail" runat="server" Text="USERNAME: " CssClass="lblLoginEmail"></asp:Label></td>
+                </tr>
 
-            <div id="LoginEmailBox">
-                <asp:TextBox ID="txtLoginEmail" runat="server"></asp:TextBox>
-            </div>
+                <tr>
+                    <td><asp:TextBox ID="txtLoginEmail" runat="server" CssClass="txtLoginEmail"></asp:TextBox></td>
+                </tr>
+                <!-- Passwoerd Field -->
+                <tr>
+                    <td><asp:Label ID="lblLoginPassword" runat="server" Text="PASSWORD: " CssClass="lblLoginPassword"></asp:Label></td>
+                </tr>
 
-            <!-- Passwoerd Field -->
-            <div id="LoginPasswordLabel">
-                <asp:Label ID="lblLoginPassword" runat="server" Text="PASSWORD: "></asp:Label>
-            </div>
+                <tr>
+                    <td><asp:TextBox ID="txtLoginPassword" runat="server" TextMode="Password" CssClass="txtLoginPassword"></asp:TextBox></td>
+                </tr>
 
-            <div id="LoginPasswordBox">
-                <asp:TextBox ID="txtLoginPassword" runat="server" TextMode="Password"></asp:TextBox>
-            </div>
-   
-            <!-- Login Button -->
-            <div id="buttonLogin">
-                <asp:Button ID="btnLogin" runat="server" Text="Log In" OnClick="btnLogin_Click" />
-            </div>
-            
-            <div id="LoginError">
-                <asp:Literal ID="litLoginError" runat="server"></asp:Literal>
-            </div>
-            
+            </table>
+
+             <!-- Login Button -->
+             <div id="LoginBtn">
+                <asp:Button ID="btnLogin" runat="server" Text="Sign In" OnClick="btnLogin_Click" CssClass="btnLogin" />
+             </div>
+
+           <!-- Register link -->
+           <div id="RegLink">
+               <a href="~/Register.aspx" runat="server"><p>Create Account</p></a>
+           </div>
         </div>
 
+           
+           <!-- Display Error -->
+           <div id="litMsg">
+                <asp:Literal ID="litLoginError" runat="server"></asp:Literal>
+           </div>
+         
+           
+        
     </div>
         
      </form>
