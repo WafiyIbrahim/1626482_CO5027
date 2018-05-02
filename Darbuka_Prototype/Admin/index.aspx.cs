@@ -20,5 +20,15 @@ namespace Darbuka_Prototype.Admin
             HttpContext.Current.GetOwinContext().Authentication.SignOut(DefaultAuthenticationTypes.ApplicationCookie);
             Response.Redirect("~/LogIn.aspx");
         }
+
+        protected void btnEditPage_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Admin/ListPage.aspx");
+        }
+
+        protected void btnAddProduct_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Admin/AddPage.aspx");
+        }
     }
 }

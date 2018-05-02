@@ -40,7 +40,7 @@ namespace Darbuka_Prototype
 
             var productItem = new Item();
             productItem.name = "Product 1";
-            productItem.currency = "BND";
+            productItem.currency = "USD";
             productItem.price = productPrice.ToString();
             productItem.sku = "PRO1";
             productItem.quantity = quantityProduct.ToString();
@@ -51,7 +51,7 @@ namespace Darbuka_Prototype
             transactionDetails.subtotal = subTotal.ToString("0.00");
 
             var transactionAmount = new Amount();
-            transactionAmount.currency = "BND";
+            transactionAmount.currency = "USD";
             transactionAmount.total = total.ToString("0.00");
             transactionAmount.details = transactionDetails;
 
@@ -68,8 +68,8 @@ namespace Darbuka_Prototype
             payer.payment_method = "paypal";
 
             var redirectUrls = new RedirectUrls();
-            redirectUrls.cancel_url = "http://" + HttpContext.Current.Request.Url.Authority + "/Default.aspx";
-            redirectUrls.return_url = "http://" + HttpContext.Current.Request.Url.Authority + "/CompletePurcahse.aspx";
+            redirectUrls.cancel_url = "http://" + HttpContext.Current.Request.Url.Authority + HttpContext.Current.Request.ApplicationPath + "/Default.aspx";
+            redirectUrls.return_url = "http://" + HttpContext.Current.Request.Url.Authority + HttpContext.Current.Request.ApplicationPath + "/CompletePurchase.aspx";
 
 
             var payment = Payment.Create(apiContext, new Payment

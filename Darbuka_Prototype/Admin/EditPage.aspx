@@ -1,13 +1,19 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MyAdmin.Master" AutoEventWireup="true" CodeBehind="EditPage.aspx.cs" Inherits="Darbuka_Prototype.Admin.EditPage" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MySite.Master" AutoEventWireup="true" CodeBehind="EditPage.aspx.cs" Inherits="Darbuka_Prototype.Admin.EditPage" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="Title" runat="server">
     Ad Darbuka - Edit Page.
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Heading2" runat="server">
-    EDIT PRODUCT
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="MainContent" runat="server">
-
     <form id="viewForm" runat="server">
+
+    <div id="EditProduct">
+        <h1>EDIT PRODUCT</h1>
+    </div>
+
+     <div id="AdminPath">
+        <a href="~/Admin/index.aspx" runat="server">Back to Admin Panel</a>
+     </div>
 
     <asp:FormView ID="FormView1" runat="server" DataKeyNames="ProductID" DataSourceID="SqlDataSource1">
         <EditItemTemplate>
@@ -115,7 +121,7 @@
         </UpdateParameters>
     </asp:SqlDataSource>
 
-    <asp:Image ID="ImageEditPage" runat="server" />
+    
 </form>
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="GoogleMap" runat="server">

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MyAdmin.Master" AutoEventWireup="true" CodeBehind="AddPage.aspx.cs" Inherits="Darbuka_Prototype.Admin.AddPage1" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MySite.Master" AutoEventWireup="true" CodeBehind="AddPage.aspx.cs" Inherits="Darbuka_Prototype.Admin.AddPage1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="Title" runat="server">
     Ad Darbuka - Add Product.
 </asp:Content>
@@ -6,8 +6,15 @@
     ADD PRODUCT
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="MainContent" runat="server">
-
     <form id="viewForm" runat="server">
+
+    <div id="AddProduct">
+        <h1>ADD PRODUCT</h1>
+    </div>
+
+     <div id="AdminPath">
+        <a href="~/Admin/index.aspx" runat="server">Back to Admin Panel</a>
+     </div>
 
     <asp:FormView ID="FormView1" runat="server" DataKeyNames="ProductID" DataSourceID="SqlDataSource1" DefaultMode="Insert" OnPageIndexChanging="FormView1_PageIndexChanging">
         <EditItemTemplate>

@@ -13,6 +13,10 @@
 
     <link href="~/css/StyleSheet.css" rel="stylesheet" type="text/css">
 
+    <!-- Google Map-->
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+
 </head>
 <!-- MASTER SITE -->
 <body runat="server">
@@ -53,17 +57,18 @@
             </asp:ContentPlaceHolder>
     </div>
 
+
+    </div>
+</div>
+
+    <!-- Google Map --> 
+<asp:ContentPlaceHolder ID="GoogleMap" runat="server"></asp:ContentPlaceHolder>
 <!-- Footer of the page -->
     <div id="FooterBottom">
         <div id="Copyrights">
             <p>&copy; 2018 AD DARBUKA. ALL RIGHT RESERVED.</p>
         </div>
-    </div>	
-
-
     </div>
-</div>
-
 </body>
 
 </html>

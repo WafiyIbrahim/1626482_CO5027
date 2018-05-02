@@ -170,6 +170,7 @@
     <Content Include="Admin\ListPage.aspx" />
     <Content Include="Admin\Pictures\BannerAdmin.jpg" />
     <Content Include="Admin\Pictures\Logo_Darbuka.png" />
+    <Content Include="Admin\Pictures\ShoppingCartWhite.png" />
     <Content Include="CompletePurchase.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap.css" />

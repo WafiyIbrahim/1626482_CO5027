@@ -23,7 +23,7 @@ h2 {
     margin: 0 auto 0 auto;
 }
 
-/* This is the CSS for MySite.Master and MyAdmin.Master */
+/* This is the CSS for MySite.Master */
 
 #page {
     width: 100%;
@@ -113,8 +113,20 @@ h2 {
 #FooterBottom {
     width: 100%;
     background-color: #404042;
-    height: 1cm;
+    height: 2cm;
     clear:both;
+}
+
+#FooterLinks {
+    width: 210px;
+    margin: 0 auto;
+}
+
+#FooterLinks a {
+    color:white;
+    margin: 0 auto;
+    font-family: Calibri;
+    font-size: small;
 }
 
 #Copyrights {
@@ -378,6 +390,79 @@ h2 {
 #litMsg {
     width: 250px;
     margin: 0 auto 0 auto;
+}
+
+/*This is the CSS for ListPage.aspx*/
+#ListProduct h1 {
+    text-align: center;
+    color: white;
+    background-color: #181729;
+    font-family: Calibri;
+}
+
+/*This is the CSS for EditPage.aspx*/
+#EditProduct h1 {
+    text-align: center;
+    color: white;
+    background-color: #181729;
+    font-family: Calibri;
+}
+
+/*This is the CSS for AddPage.aspx*/
+#AddProduct h1 {
+    text-align: center;
+    color: white;
+    background-color: #181729;
+    font-family: Calibri;
+}
+
+/*This is the CSS for back to Admin Panel link*/
+#AdminPath {
+    width: 150px;
+    float: right;
+}
+
+/*This is the CSS for back to Admin Panel Menu*/
+#AdminPanelMenu {
+    background-color: white;
+    width: 400px;
+    height: auto;
+    margin: 0 auto 30px auto;
+}
+
+#AdminMenuTable {
+    height: 100px;
+    width: 250px;
+    margin: 30px auto;
+}
+
+.btnAddProduct {
+    height: 35px;
+    width: 255px;
+    font-family: Calibri;
+    font-weight: bold;
+    font-size: medium;
+}
+
+.btnManageProduct {
+    height: 35px;
+    width: 255px;
+    font-family: Calibri;
+    font-weight: bold;
+    font-size: medium;
+}
+
+#ToLogout {
+    width: 255px;
+    margin: 0 auto 0 75px;
+}
+
+.btnLogOut {
+    height: 35px;
+    width: 255px;
+    font-family: Calibri;
+    font-weight: bold;
+    font-size: medium;
 }
 
 
