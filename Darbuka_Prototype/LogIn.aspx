@@ -1,10 +1,11 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MySite.Master" AutoEventWireup="true" CodeBehind="LogIn.aspx.cs" Inherits="Darbuka_Prototype.LogIn" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="Title" runat="server">
+    AD DARBUKA - SIGN IN
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Heading2" runat="server">
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="MainContent" runat="server">
-     <form runat="server">
+
 
     <div id="LoginPage">
         <h1>SIGN IN</h1>
@@ -50,7 +51,7 @@
         
     </div>
         
-    </form>
+
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="GoogleMap" runat="server">
 </asp:Content>

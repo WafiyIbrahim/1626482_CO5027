@@ -4,7 +4,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="Heading2" runat="server">
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="MainContent" runat="server">
-    <form runat="server">
+
 
     <div id="RegisterPage">
         <h1>REGISTER</h1>
@@ -49,6 +49,6 @@
 
     </div>
 
-    </form>
+
 
 </asp:Content>

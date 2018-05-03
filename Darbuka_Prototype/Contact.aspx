@@ -5,8 +5,6 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="Heading2" runat="server">
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="MainContent" runat="server">
-    <form runat="server">
-
     <div id="contactInfo">
         <h1>CONTACT US</h1>
 
@@ -59,7 +57,7 @@
                 <asp:Literal ID="litResult" runat="server"></asp:Literal>
             </div>
     </div>
-</form>
+
     
 </asp:Content>
 
@@ -83,5 +81,6 @@
                 </script>
 
                 <script async defer type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNIBMOpNTem55lD3f910VI89T9LSA7Ge0&callback=initMap"></script>
+
            </div>
         </asp:Content>

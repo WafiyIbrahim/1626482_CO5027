@@ -1,11 +1,11 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MySite.Master" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="Darbuka_Prototype.Admin.index" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="Title" runat="server">
-    Ad Darbuka - Admin
+    AD DARBUKA - ADMIN
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Heading2" runat="server">
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="MainContent" runat="server">
-    <form runat="server">
+
     <div id="AdminBanner">
         <a><img src="Pictures/BannerAdmin.jpg" alt="Banner"></a>
     </div>
@@ -27,7 +27,7 @@
     
     </div>
 
-</form>
+
 
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="GoogleMap" runat="server">

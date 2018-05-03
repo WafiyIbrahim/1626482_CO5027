@@ -17,8 +17,15 @@ namespace Darbuka_Prototype
 
         protected void btnPurchase_Click(object sender, EventArgs e)
         {
+            // Code adapted from https://stackoverflow.com/a/8185231
+            var AdDarbukaPrice = ProductFormVw.FindControl("ProductPriceLabel") as Label;
+            var ProductPriceLabel = AdDarbukaPrice.Text;
+            var AdDarbukaName = ProductFormVw.FindControl("ProductNameLabel") as Label;
+            string ProductNameLabel = AdDarbukaName.Text;
+
+
             decimal postagePackagingCost = 3.95m;
-            decimal productPrice = 10.00m;
+            decimal productPrice = decimal.Parse(ProductPriceLabel);
             int quantityProduct = int.Parse(ddlQuantity.SelectedValue);
             decimal subTotal = (quantityProduct * productPrice);
             decimal total = subTotal + postagePackagingCost;
@@ -39,10 +46,9 @@ namespace Darbuka_Prototype
             
 
             var productItem = new Item();
-            productItem.name = "Product 1";
+            productItem.name = ProductNameLabel;
             productItem.currency = "USD";
-            productItem.price = productPrice.ToString();
-            productItem.sku = "PRO1";
+            productItem.price = ProductPriceLabel.ToString();
             productItem.quantity = quantityProduct.ToString();
 
             var transactionDetails = new Details();
@@ -90,7 +96,7 @@ namespace Darbuka_Prototype
                 }
             }
 
-
+            Response.Redirect("~/ShoppingCart/ProductDescriptionUser.aspx");
         }
     }
 }

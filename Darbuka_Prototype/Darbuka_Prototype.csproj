@@ -163,7 +163,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="About.aspx" />
     <Content Include="Admin\AddPage.aspx" />
     <Content Include="Admin\EditPage.aspx" />
     <Content Include="Admin\index.aspx" />
@@ -200,7 +199,7 @@
     <Content Include="Pictures\Logo_Darbuka.png" />
     <Content Include="Pictures\ShoppingCart.png" />
     <Content Include="Pictures\ShoppingCartWhite.png" />
-    <Content Include="ProductDesc.aspx" />
+    <Content Include="ShoppingCart\ProductDesc.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -285,13 +284,6 @@
       <DependentUpon>ListPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
-    <Compile Include="About.aspx.cs">
-      <DependentUpon>About.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="About.aspx.designer.cs">
-      <DependentUpon>About.aspx</DependentUpon>
-    </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
@@ -324,11 +316,11 @@
     <Compile Include="MySite.Master.designer.cs">
       <DependentUpon>MySite.Master</DependentUpon>
     </Compile>
-    <Compile Include="ProductDesc.aspx.cs">
+    <Compile Include="ShoppingCart\ProductDesc.aspx.cs">
       <DependentUpon>ProductDesc.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ProductDesc.aspx.designer.cs">
+    <Compile Include="ShoppingCart\ProductDesc.aspx.designer.cs">
       <DependentUpon>ProductDesc.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -1,13 +1,14 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MySite.Master" AutoEventWireup="true" CodeBehind="ProductDesc.aspx.cs" Inherits="Darbuka_Prototype.ProductDesc" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="Title" runat="server">
+    AD DARBUKA - PRODUCT DESCRIPTION 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Heading2" runat="server">
-    Product Details
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="MainContent" runat="server">
-    <form id="form1" runat="server">
 
-    <asp:FormView ID="FormView1" runat="server" DataKeyNames="ProductID" DataSourceID="SqlDataSource1" Width="607px">
+        <h1>PRODUCT DESCRIPTION</h1>
+
+    <asp:FormView ID="ProductFormVw" runat="server" DataKeyNames="ProductID" DataSourceID="SqlDataSource1" Width="607px">
         <EditItemTemplate>
             ProductID:
             <asp:Label ID="ProductIDLabel1" runat="server" Text='<%# Eval("ProductID") %>' />
@@ -99,7 +100,7 @@
 
         <asp:Button ID="btnPurchase" runat="server" Text="Buy Now" OnClick="btnPurchase_Click" />
 
-   </form>
+
 
 
 </asp:Content>

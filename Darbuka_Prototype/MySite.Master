@@ -5,6 +5,7 @@
 <html lang="en">
 
 <head runat="server">
+    <asp:ContentPlaceHolder ID="headContentPlaceHolder" runat="server"></asp:ContentPlaceHolder>
 
     <title>
          <asp:ContentPlaceHolder ID="Title" runat="server"></asp:ContentPlaceHolder>
@@ -21,6 +22,8 @@
 
 <!-- MASTER SITE -->
 <body runat="server">
+
+<form id="formMaster" runat="server">
 
 <div id="page">
      <!-- SignIn and Register div -->
@@ -43,7 +46,15 @@
 	            <ul>
 			        <li><a href="~/Default.aspx" runat="server">HOME</a></li>
                     <li><a href="~/Contact.aspx" runat="server">CONTACT US</a></li>
-                    <li><a href="~/LogIn.aspx" runat="server">SIGN IN</a></li>
+                    <li><a href="~/Admin/index.aspx" runat="server">
+                        <asp:LoginName ID="SignInName" runat="server" FormatString="Welcome,{0}!"/></a>
+                        <asp:LoginStatus ID="LoginStatus1" runat="server" 
+                            LoginText="SIGN IN" 
+                            LogoutText ="LOGOUT" 
+                            LogoutPageUrl="~/Default.aspx" 
+                            LogoutAction="Redirect" 
+                            OnLoggingOut="LoginStatus1_LoggingOut"/>
+                    </li>
 		        </ul>	 		
 	        </div>
         </div>
@@ -71,13 +82,14 @@
         <div id="FooterLinks">
             <a href="http://validator.w3.org/check?uri=referer">Validate HTML</a> |
             <a href="http://jigsaw.w3.org/css-validator/check/referer">Validate CSS</a> | 
-            <a href="~/Admin/index.aspx">Admin</a>
+            <a href="~/Admin/index.aspx" runat="server">Admin</a>
         </div>
 
         <div id="Copyrights">
             <p>&copy; 2018 AD DARBUKA. ALL RIGHT RESERVED.</p>
         </div>
     </div>	
+</form>
 </body>
 
 </html>

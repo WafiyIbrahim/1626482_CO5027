@@ -1,13 +1,10 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MySite.Master" AutoEventWireup="true" CodeBehind="AddPage.aspx.cs" Inherits="Darbuka_Prototype.Admin.AddPage1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="Title" runat="server">
-    Ad Darbuka - Add Product.
+    AD DARBUKA - ADD PRODUCT
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Heading2" runat="server">
-    ADD PRODUCT
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="MainContent" runat="server">
-    <form id="viewForm" runat="server">
-
     <div id="AddProduct">
         <h1>ADD PRODUCT</h1>
     </div>
@@ -119,7 +116,7 @@
         </UpdateParameters>
     </asp:SqlDataSource>
 
-</form>
+
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="GoogleMap" runat="server">
 </asp:Content>
